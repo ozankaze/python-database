@@ -20,6 +20,8 @@ id      name            position
 
 link
 https://www.sqlite.org/datatype3.html
+http://docs.peewee-orm.com/en/latest/peewee/quickstart.html
+http://docs.peewee-orm.com/en/latest/peewee/models.html
 
 
 
