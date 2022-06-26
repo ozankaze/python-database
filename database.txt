@@ -1,0 +1,34 @@
+/// Catatan Database
+
+
+
+DATABASE
+SQLITE
+
+Table
+Column
+
+Table: Member REDVELVET
+id      name            position
+1       Irene           Vokal
+2       Joy             Vokal
+3       Yeri            Rap
+4       Wendy           Vokal Utama
+5       Kang Seul-gi    Lead Vokal
+
+=> Penting sqlite3 dbmain.db
+
+link
+https://www.sqlite.org/datatype3.html
+
+
+
+.table -> untuk melihat data table.
+.exit -> untuk keliar di sqlite3.
+
+
+SELECT * FROM redvelvet -> untuk MELIHAT isi database
+CREATE TABLE redvelvet (rowid, name VARCHAR(25), position VARCHAR(25));
+INSERT INTO redvelvet (rowid, name, position) VALUES (1, 'Irine', 'Vokal');
+UPDATE redvelvet SET name='Wendy Si' WHERE rowid = 4;
+DELETE FROM redvelvet WHERE rowid = 4
