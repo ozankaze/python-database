@@ -1,3 +1,5 @@
+from ast import For
+from xml.sax.saxutils import prepare_input_source
 from peewee import *
 
 db = SqliteDatabase('user.db')
@@ -22,3 +24,21 @@ db.create_tables([User], safe = True) #untuk membuat table baru
 # ]
 
 # print(User.insert_many(data_resource).execute())
+
+# enaknya ini bisa di costume berdasarkan by id / name / birthday
+# user = User.get(User.id == 6)
+# print(user.name)
+
+# kalau pake ini tidak bisa hanya bisa by id
+# user = User.get_by_id(3)
+# print(user)
+
+# enaknya ini bisa di costume berdasarkan by id / name / birthday
+# user = User[2]
+# print(user.birthday)
+
+# menampilkan semua data by id / name / birthday
+# semuaData = User.select()
+# for data in semuaData:
+    #costume di sini
+    # print(data.name)
