@@ -14,6 +14,8 @@ class User(Model):
 db.connect()
 db.create_tables([User], safe = True) #untuk membuat table baru
 
+# #### Insert Data
+
 # insert satu data
 # User.create(name = 'Irine', birthday = 'Inchon')
 
