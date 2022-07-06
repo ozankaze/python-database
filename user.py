@@ -46,3 +46,16 @@ db.create_tables([User], safe = True) #untuk membuat table baru
 # for data in semuaData:
     #costume di sini
     # print(data.name)
+
+# #### Filter Data Dengan Where
+
+# users = User.select().where((User.name == 'Mira') | (User.name == 'Irine'))
+
+# for user in users:
+#     print(user.name)
+
+# study kasus biasanya di gunakan ketika kita search data
+# users = User.select().where(User.name.contains('Irine'))
+
+# for user in users:
+#     print(user.name)
