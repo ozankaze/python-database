@@ -25,6 +25,8 @@ db.create_tables([User], safe = True) #untuk membuat table baru
 
 # print(User.insert_many(data_resource).execute())
 
+# #### Memilih Data
+
 # enaknya ini bisa di costume berdasarkan by id / name / birthday
 # user = User.get(User.id == 6)
 # print(user.name)
