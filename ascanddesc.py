@@ -36,3 +36,11 @@ db.create_tables([User], safe = True)
 # ]
 
 # User.insert_many(data).execute()
+
+# #### Update Data
+
+# user = User.select().where(User.username == 'Rose').get()
+# user.username = 'Rose Black Pink'
+# user.save()
+
+# User.update(point = 30).where(User.username == 'Jeny').execute()
