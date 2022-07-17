@@ -44,3 +44,10 @@ db.create_tables([User], safe = True)
 # user.save()
 
 # User.update(point = 30).where(User.username == 'Jeny').execute()
+
+# #### Menghapus Data
+
+# user = User.get(User.id == 4)
+# user.delete_instance()
+
+# User.delete().where(User.point < 20).execute()
