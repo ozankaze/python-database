@@ -51,3 +51,18 @@ db.create_tables([User], safe = True)
 # user.delete_instance()
 
 # User.delete().where(User.point < 20).execute()
+
+# #### Count Limit
+
+# print(User.select().count())
+
+# users = User.select().limit(3)
+# for user in users:
+#     print(user.username)
+
+# #### Pagination
+
+# users = User.select().paginate(2, 2)
+
+# for user in users:
+#     print(user.username)
