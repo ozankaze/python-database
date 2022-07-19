@@ -31,3 +31,12 @@ DB.create_tables([User, Tweet])
 #     for tweet in tweets:
 #         Tweet.create(user=user, message=tweet)
 
+# #### Memanggil Data Relasi
+
+# query = Tweet.select().join(User).where(User.username == 'Irine')
+# for tweet in query:
+#     print(tweet.message)
+
+# query = User.get(User.username == 'Rose')
+# for tweet in query.tweets:
+#     print(tweet.message)
